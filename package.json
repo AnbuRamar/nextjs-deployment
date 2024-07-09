@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && mkdir -p public && cp -r .next/static/* public/ && cp -r .next/server/pages/* public/ && cp -r .next/serverless/* public/",
+    "build": "next build && mkdir -p out && mv .next/* out/ && rm -rf .next",
     "start": "next start",
     "lint": "next lint"
   },
